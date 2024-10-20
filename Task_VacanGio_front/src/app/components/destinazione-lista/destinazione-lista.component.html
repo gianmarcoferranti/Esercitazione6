@@ -1,0 +1,27 @@
+<div class="alert alert-success mt-3" role="alert" *ngIf="successo">
+    Operazione effettuata con successo xD
+</div>
+
+<table class="table table-striped" style="background-color: rgba(255, 255, 255, 0.75);">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrizione</th>
+            <th>Paese</th>
+            <th>Immagine</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dest of elencodestinazioni">
+            <td>{{ dest.nom }}</td>
+            <td>{{ dest.des }}</td>
+            <td>{{ dest.pae }}</td>
+            <td>{{ dest.imm }}</td>
+            <td>
+                <!-- <button type="button" class="btn btn-danger" (click)="elimina(uten.cod)">X</button> -->
+                <a href="/pacchettiperdestinazione/lista/{{ uten.cod }}" class="btn btn-warning">Vedi Pacchetti</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

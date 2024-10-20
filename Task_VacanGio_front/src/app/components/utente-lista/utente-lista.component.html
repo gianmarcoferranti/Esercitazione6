@@ -1,0 +1,27 @@
+<div class="alert alert-success mt-3" role="alert" *ngIf="successo">
+    Operazione effettuata con successo xD
+</div>
+
+<table class="table table-striped" style="background-color: rgba(255, 255, 255, 0.75);">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let uten of elencoutenti">
+            <td>{{ uten.nom }}</td>
+            <td>{{ uten.cog }}</td>
+            <td>{{ uten.tel }}</td>
+            <td>{{ uten.ema }}</td>
+            <!-- <td>
+                <button type="button" class="btn btn-danger" (click)="elimina(uten.cod)">X</button>
+                <a href="/utenti/modifica/{{ uten.cod }}" class="btn btn-warning">M</a>
+            </td> -->
+        </tr>
+    </tbody>
+</table>

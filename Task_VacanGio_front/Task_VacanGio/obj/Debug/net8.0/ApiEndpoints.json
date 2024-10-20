@@ -1,0 +1,624 @@
+[
+  {
+    "ContainingType": "Task_VacanGio.Controllers.DestinazioneController",
+    "Method": "StampaDestinazioni",
+    "RelativePath": "api/destinazioni",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Task_VacanGio.Models.DestinazioneDTO, Task_VacanGio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.DestinazioneController",
+    "Method": "InserisciDestinazione",
+    "RelativePath": "api/destinazioni",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varPae",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varImm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.DestinazioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.DestinazioneController",
+    "Method": "UpdateDestinazione",
+    "RelativePath": "api/destinazioni",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDes",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varPae",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varImm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.DestinazioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.DestinazioneController",
+    "Method": "CercaPerCodice",
+    "RelativePath": "api/destinazioni/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.DestinazioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.DestinazioneController",
+    "Method": "EliminaDestinazione",
+    "RelativePath": "api/destinazioni/{varCodice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "StampaPacchetti",
+    "RelativePath": "api/pacchetti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Task_VacanGio.Models.PacchettoDTO, Task_VacanGio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "InserisciPacchetto",
+    "RelativePath": "api/pacchetti",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varPre",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDur",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDin",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDfi",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.PacchettoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "UpdatePacchetto",
+    "RelativePath": "api/pacchetti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varPre",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDur",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDin",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varDfi",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.PacchettoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "CercaPerCodice",
+    "RelativePath": "api/pacchetti/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.PacchettoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "EliminaPacchetto",
+    "RelativePath": "api/pacchetti/{varCodice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.PacchettoController",
+    "Method": "CercaPerCodiceDestinazione",
+    "RelativePath": "api/pacchetti/pacchetto/{varCodiceDestinazione}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodiceDestinazione",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Task_VacanGio.Models.PacchettoDTO, Task_VacanGio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.RecensioneController",
+    "Method": "StampaRecensioni",
+    "RelativePath": "api/recensioni",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Task_VacanGio.Models.RecensioneDTO, Task_VacanGio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.RecensioneController",
+    "Method": "InserisciRecensione",
+    "RelativePath": "api/recensioni",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodUte",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varCodPac",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varVot",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varComm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.RecensioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.RecensioneController",
+    "Method": "UpdateRecensione",
+    "RelativePath": "api/recensioni",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varVot",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varComm",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.RecensioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.RecensioneController",
+    "Method": "CercaPerCodice",
+    "RelativePath": "api/recensioni/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.RecensioneDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.RecensioneController",
+    "Method": "EliminaRecensione",
+    "RelativePath": "api/recensioni/{varCodice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.UtenteController",
+    "Method": "StampaUtenti",
+    "RelativePath": "api/utenti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Task_VacanGio.Models.UtenteDTO, Task_VacanGio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.UtenteController",
+    "Method": "InserisciUtente",
+    "RelativePath": "api/utenti",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varCog",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varTel",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varEma",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.UtenteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.UtenteController",
+    "Method": "UpdateVideoteca",
+    "RelativePath": "api/utenti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCod",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varNom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varCog",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "varTel",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "varEma",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.UtenteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.UtenteController",
+    "Method": "CercaPerCodice",
+    "RelativePath": "api/utenti/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Task_VacanGio.Models.UtenteDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Task_VacanGio.Controllers.UtenteController",
+    "Method": "EliminaUtente",
+    "RelativePath": "api/utenti/{varCodice}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
