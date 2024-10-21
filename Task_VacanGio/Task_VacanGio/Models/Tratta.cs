@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Task_VacanGio.Models
 {
+    [Table("Tratta")]
+
     public class Tratta
     {
         [Key]
@@ -12,10 +14,10 @@ namespace Task_VacanGio.Models
         public int PacchettoRif { get; set; }
 
         [ForeignKey("DestinazioneRif")]
-        public Destinazione Destinazione { get; set; }
+        public Destinazione Destinazione { get; set; } = null!;
 
         [ForeignKey("PacchettoRif")]
-        public Pacchetto Pacchetto { get; set; }
+        public Pacchetto Pacchetto { get; set; } = null!;
 
 
     }

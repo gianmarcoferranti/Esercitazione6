@@ -22,7 +22,7 @@ namespace Task_VacanGio.Repos
                   tratta => tratta.PacchettoRif,
                   pacchetto => pacchetto.PacchettoID,
                   (tratta, pacchetto) => pacchetto)
-            .Distinct().ToList();
+            .ToList();
             //return (IEnumerable<Pacchetto>)_context.Tratte.ToList();
         }
 

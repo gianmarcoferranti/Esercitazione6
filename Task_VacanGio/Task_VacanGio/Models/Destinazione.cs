@@ -11,7 +11,7 @@ namespace Task_VacanGio.Models
         public string Codice { get; set; } = null!;
         public string Nome { get; set; } = null!;
         public string? Descrizione { get; set; }
-        public string Paese { get; set; } = null;
+        public string Paese { get; set; } = null!;
         public string? Immagine { get; set; }
     }
 }
